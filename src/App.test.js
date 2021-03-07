@@ -28,6 +28,6 @@ describe('Counter Testing', () => {
   });
   test('check for the button click', () => {
     wrapper.find('#fetch-comment').simulate('click');
-    expect(wrapper.fetchComment).toBeCalled();
+    expect(wrapper.fetchComment).toHaveBeenCalledTimes(1);
   });
 });

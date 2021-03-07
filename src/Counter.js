@@ -11,7 +11,7 @@ function Counter() {
     let response = await axios.get(
       'https://jsonplaceholder.typicode.com/comments/1',
     );
-    setComment(response.data);
+    setComment(response.data.body);
   };
   return (
     <div>
